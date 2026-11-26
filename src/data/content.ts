@@ -66,9 +66,9 @@ export const heroContent: HeroContent = {
   summary: "Materials Researcher with 9+ years of expertise in thermally sprayed coatings, specializing in microstructural design, process optimization, and performance validation. Proficient in statistical modeling and finite element analysis (FEA) to optimize coating architectures and predict service behavior. Experienced in scaling lab developments to production and integrating experimental data with computational modeling to deliver cost-effective, high-performance solutions.",
   contact: {
     email: "contact@shalakavshinde.com",
-    linkedin: "shalaka-shinde-616729a6",
+    linkedin: "shalaka-v-shinde",
     location: "New York, USA",
-    scholar: "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=NbHWfiMAAAAJ"
+    scholar: "https://scholar.google.com/citations?user=NbHWfiMAAAAJ&hl=en&authuser=1"
   }
 };
 

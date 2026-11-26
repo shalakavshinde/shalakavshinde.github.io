@@ -11,7 +11,7 @@ export const Contact: React.FC<ContactProps> = ({ contact }) => {
 
   const scholarUrl =
     contact.scholar ||
-    'https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=NbHWfiMAAAAJ';
+    'https://scholar.google.com/citations?user=NbHWfiMAAAAJ&hl=en&authuser=1';
 
   const copyEmailToClipboard = () => {
     navigator.clipboard.writeText(contact.email);

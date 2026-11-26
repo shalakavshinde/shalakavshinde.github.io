@@ -42,7 +42,7 @@ export const Nav: React.FC<NavProps> = () => {
     { label: 'Credentials', href: '#credentials', external: false, icon: Award },
     {
       label: 'Google Scholar',
-      href: 'https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=NbHWfiMAAAAJ',
+      href: 'https://scholar.google.com/citations?user=NbHWfiMAAAAJ&hl=en&authuser=1',
       external: true,
       icon: GraduationCap,
     },
@@ -80,7 +80,7 @@ export const Nav: React.FC<NavProps> = () => {
               Credentials
             </a>
             <a
-              href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=NbHWfiMAAAAJ"
+              href="https://scholar.google.com/citations?user=NbHWfiMAAAAJ&hl=en&authuser=1"
               target="_blank"
               rel="noopener noreferrer"
               className={navLinkClass}
