@@ -68,7 +68,7 @@ export const heroContent: HeroContent = {
     email: "contact@shalakavshinde.com",
     linkedin: "shalaka-v-shinde",
     location: "New York, USA",
-    scholar: "https://scholar.google.com/citations?user=NbHWfiMAAAAJ&hl=en&authuser=1"
+    scholar: "https://scholar.google.com/citations?user=NbHWfiMAAAAJ"
   }
 };
 

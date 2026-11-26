@@ -9,7 +9,7 @@ export const Footer: React.FC<FooterProps> = ({ contact }) => {
   const currentYear = new Date().getFullYear();
   const scholarUrl =
     contact.scholar ||
-    'https://scholar.google.com/citations?user=NbHWfiMAAAAJ&hl=en&authuser=1';
+    'https://scholar.google.com/citations?user=NbHWfiMAAAAJ';
 
   return (
     <footer className="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
