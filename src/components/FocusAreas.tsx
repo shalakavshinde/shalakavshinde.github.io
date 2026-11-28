@@ -1,5 +1,6 @@
 import type { FocusArea } from '../data/content';
 import { Layers, Zap, CheckCircle, Database, TrendingUp } from 'lucide-react';
+import PlasmaTorchIllustration from './PlasmaTorchIllustration';
 
 interface FocusAreasProps {
   areas: FocusArea[];
@@ -22,18 +23,24 @@ export const FocusAreas: React.FC<FocusAreasProps> = ({ areas }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {areas.map((area, idx) => (
-            <div key={idx} className="relative p-6 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-primary-50 mb-6">
-                {getIcon(idx)}
+        <div className="xl:grid xl:grid-cols-[1fr_20%] xl:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {areas.map((area, idx) => (
+              <div key={idx} className="relative p-6 bg-slate-50 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-primary-50 mb-6">
+                  {getIcon(idx)}
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-3">{area.title}</h3>
+                <p className="text-slate-600 leading-relaxed">
+                  {area.description}
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">{area.title}</h3>
-              <p className="text-slate-600 leading-relaxed">
-                {area.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <div className="hidden xl:flex items-center justify-center">
+            <PlasmaTorchIllustration className="h-full max-h-[640px] w-auto" />
+          </div>
         </div>
       </div>
     </section>

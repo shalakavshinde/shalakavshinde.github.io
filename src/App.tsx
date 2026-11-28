@@ -6,7 +6,6 @@ import { CaseStudies } from './components/CaseStudies';
 import { Credentials } from './components/Credentials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { StarBackground } from './components/StarBackground';
 import { ThermalSprayTools } from './pages/ThermalSprayTools';
 import { useHashRoute } from './hooks/useHashRoute';
 import { TOOLS_ROUTE } from './tools/registry';
@@ -39,9 +38,6 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: '#eef0f5', position: 'relative' }}>
-      {/* Fixed star map of March 29, 1994 — spans full page */}
-      <StarBackground />
-      {/* All content sits above the star canvas */}
       <div className="relative flex flex-col flex-grow" style={{ zIndex: 1 }}>
         <Nav onTools={onTools} />
         <main className="flex-grow">
